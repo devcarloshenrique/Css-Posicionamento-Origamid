@@ -20,6 +20,13 @@ body {
 	margin: 0 auto;
 }
 
+@media (max-width: 739px)  {
+	.container {
+		flex-direction: column;
+		max-width: 300px;
+	}
+}
+
 /* Menu */
 
 .menu {
@@ -33,9 +40,14 @@ body {
 	font-size: 1.125em;
 }
 
+.menu-log {
+	margin: 0 10px;
+}
+
 .menu-nav {
 	flex: 1;
 	align-self: center;
+	margin: 10px 0;
 }
 
 .menu-nav ul {
@@ -44,10 +56,20 @@ body {
 	list-style: none;
 }
 
-.menu-nav ul a {
+.menu-nav ul li a {
 	padding: 10px;
-
 }
+
+@media (max-width: 739px)  {
+	.menu-nav {
+		margin: 0px;
+	}	
+	.menu-logo {
+		align-self: center;
+		padding: 16px;
+	}	
+}
+
 
 /* Intro */
 
@@ -57,6 +79,14 @@ body {
 	color: #fff;
 	padding: 150px 0;
 	text-align: center;
+}
+
+@media (max-width: 739px)  {
+
+	.intro {
+		padding: 60px 0;
+	}
+	
 }
 
 .intro h1 {
@@ -93,6 +123,13 @@ body {
 .sobre-item {
 	flex: 1;
 	margin: 0 10px;
+}
+
+@media (max-width: 739px)  {
+	.sobre-item {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
 }
 
 .sobre-item img {
@@ -187,6 +224,13 @@ h2.produtos-mineiro::before {
 	margin: 20px auto 0 auto;
 }
 
+@media (max-width: 739px)  {
+	.produtos-item {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
 /* Locais */
 
 .locais {
@@ -228,10 +272,32 @@ h2.produtos-mineiro::before {
 	padding: 10px 20px;
 }
 
+@media (max-width: 739px)  {
+	.locais-info, .locais-img {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
 /* Assine */
 
 .assine {
 	background: #e7e4d8;
+	padding: 30px 0;
+}
+
+.assine-info {
+	flex: 1;
+	padding: 0 10px;
+}
+
+@media (max-width: 739px)  {
+	.assine-info {
+		margin: 0 0 40px 0;
+	}
+	.assine form {
+		margin: 0;
+	}
 }
 
 .assine-info h2 {
@@ -243,11 +309,22 @@ h2.produtos-mineiro::before {
 	font-style: italic;
 }
 
+.assine form {
+	flex: 1;
+	padding: 0 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
 .assine form label {
 	display: none;
 }
 
 .assine input {
+	flex: 1;
+	align-self: flex-start;
+	padding: 10px 6px;
 	border: 3px solid #252525;
 	background: none;
 	font-size: 1.5em;
@@ -256,6 +333,9 @@ h2.produtos-mineiro::before {
 }
 
 .assine button {
+	flex: 1;
+	align-self: flex-start;
+	padding: 13px;
 	background: #252525;
 	border: none;
 	font-family: Georgia, serif;
@@ -269,9 +349,23 @@ h2.produtos-mineiro::before {
 
 .footer {
 	background: #d6d3c8;
+	padding: 30px 0;
+}
+
+.footer-img {
+	flex: 1;
+	margin: 0 10px;
 }
 
 .footer p {
+	flex: 1;
 	font-size: 1.125em;
 	line-height: 1.4em;
+	margin: 0 10px;
+}
+
+@media (max-width: 739px)  {
+	.footer-img, .footer p {
+		margin: 10px 0px;
+	}
 }
